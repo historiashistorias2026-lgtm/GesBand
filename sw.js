@@ -1,4 +1,4 @@
-const CACHE_NAME='gesband-shell-v9';
+const CACHE_NAME='gesband-shell-v17';
 const APP_SHELL=['./index.html','./manifest.webmanifest','./icons/gesband-180.png','./icons/gesband-192.png','./icons/gesband-512.png','./assets/crest-fortitudo.png','./assets/crest-tempestate.png','./assets/crest-fortitudo-crowned.png','./assets/crest-tempestate-crowned.png','./assets/uniform-white-officer.png','./assets/uniform-green-gold.png','./assets/uniform-white-naval.png','./assets/uniform-blue-white.png','./assets/uniform-dark-parade.png','./assets/uniform-black-purple.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(APP_SHELL)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('gesband-shell-')&&key!==CACHE_NAME).map(key=>caches.delete(key)))).then(()=>self.clients.claim()))});
