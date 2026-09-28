@@ -1,0 +1,10 @@
+GesBand para móvil
+
+La carpeta incluye la aplicación web instalable, su manifiesto, el servicio de caché sin conexión y los iconos. Conserva dentro de la misma carpeta index.html, manifest.webmanifest, sw.js, icons/ y assets/. Las imágenes de escudos y uniformes se usan en los selectores de la banda y el sastre.
+
+Para instalarla, publícala en una dirección HTTPS y abre esa dirección desde el teléfono. Abrir index.html con doble clic permite jugar, pero no activa la instalación ni el modo sin conexión.
+
+Android: abre GesBand en Chrome y usa «Instalar aplicación» o el botón «Instalar» del juego.
+iPhone/iPad: abre GesBand en Safari, pulsa Compartir y selecciona «Añadir a pantalla de inicio».
+
+La partida se guarda en el almacenamiento del navegador de ese dispositivo. Usa las opciones de guardar/cargar del juego para conservar copias.
